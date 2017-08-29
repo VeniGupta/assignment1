@@ -1,0 +1,4 @@
+::1 - - [29/Aug/2017:18:06:12 +0000] "POST /submit HTTP/1.1" 200 99 "http://localhost:3000/static/form.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36"
+::1 - - [29/Aug/2017:18:17:44 +0000] "POST /submit HTTP/1.1" 200 99 "http://localhost:3000/static/form.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36"
+::1 - - [29/Aug/2017:18:38:32 +0000] "POST /submit HTTP/1.1" 200 99 "http://localhost:3000/static/form.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36"
+::1 - - [29/Aug/2017:18:38:53 +0000] "POST /submit HTTP/1.1" 200 99 "http://localhost:3000/static/assets/form.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36"
