@@ -1,10 +1,16 @@
 var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
+var morgan = require('morgan');
+var fs = require('fs')
+var path = require('path')
+
 app.set("view engine", "pug");
 app.use("/", bodyParser.urlencoded({extended:false}) );
 app.use("/static", express.static(__dirname));
 app.use("/static", express.static(__dirname+"/assets"));
+var accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), {flags: 'a'})
+app.use(morgan('combined', {stream: accessLogStream}));
 
 app.post("/submit", function(req,res)
 {
@@ -18,7 +24,7 @@ app.post("/submit", function(req,res)
 
     res.render(
         "index",
-        { message : req.body.firstname, days : diffDays}
+        { name : req.body.firstname, days : diffDays}
         // message: " Hey " + req.body.firstname +" you have lived on this planet "+ diffDays +" days"}
 
     );
